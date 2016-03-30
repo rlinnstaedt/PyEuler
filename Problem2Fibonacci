@@ -1,0 +1,18 @@
+"""Sum the even-valued terms of the Fibonacci sequence whose
+values do not exceed four million."""
+
+
+def even_fibo(n=4000000):
+
+    result = []
+    a, b = 1, 2
+    while b < n:
+        if b % 2 is 0:
+            result.append(b)
+        a, b = b, a + b
+    total = sum(result)
+    print(total)
+
+even_fibo(10)
+even_fibo(100)
+even_fibo(4000000)

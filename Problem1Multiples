@@ -1,0 +1,18 @@
+def multiples(number1=3, number2=5, n=1000):
+    first_multiple = []
+    second_multiple = []
+
+    for i in range(n):
+        if i % number1 is 0:
+            first_multiple.append(i)
+        elif i % number2 is 0:
+            second_multiple.append(i)
+
+    total1 = sum(first_multiple)
+    total2 = sum(second_multiple)
+    total = total1 + total2
+    print(total)
+
+multiples(3, 5, 10)
+multiples(3, 5, 21)
+multiples(3, 5, 1000)
